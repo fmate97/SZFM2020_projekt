@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.view.ATMFelvetelController">
+   <children>
+      <Button layoutX="378.0" layoutY="256.0" mnemonicParsing="false" onAction="#exitButtonID" text="Vissza" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="nincsszamlaLabel" layoutX="180.0" layoutY="49.0" text="Önnek még nincs bankszámlaszáma!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxID" layoutX="24.0" layoutY="46.0" onMouseClicked="#choiceBoxPressed" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="26.0" text="Melyik bankszámláról szeretné felvenni?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="keremLabelID" layoutX="24.0" layoutY="50.0" text="Kérem válasszon..." />
+      <Label fx:id="ID1" layoutX="21.0" layoutY="145.0" text="Mekkora összeget szeretne felvenni?" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ID2" layoutX="24.0" layoutY="91.0" text="Kiválasztott bankszámla egyenlege:" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="osszegLabelID" alignment="CENTER_RIGHT" layoutX="260.0" layoutY="91.0" prefHeight="20.0" prefWidth="80.0" text="0" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ID3" layoutX="350.0" layoutY="91.0" text="Forint" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="osszegID" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="165.0" visible="false" />
+      <Label fx:id="ID4" layoutX="174.0" layoutY="168.0" text="Forint" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nagyobbosszegID" layoutX="24.0" layoutY="200.0" text="A megadott összeg nagyobb az Ön egyenlegénél!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ervenytelenID" layoutX="228.0" layoutY="170.0" text="Érvénytelen összeg!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButtonID" disable="true" layoutX="21.0" layoutY="259.0" mnemonicParsing="false" onAction="#okButtonPressed" text="Összeg felvétele" textFill="LIMEGREEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="megerositButtonID" layoutX="188.0" layoutY="46.0" mnemonicParsing="false" onAction="#megerositButtonPressed" text="Megerősítés" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="sikeresID" layoutX="24.0" layoutY="239.0" text="Sikeres pénzfelvétel!" textFill="LIMEGREEN" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

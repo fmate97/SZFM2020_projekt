@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.view.ATMOpcioController">
+   <children>
+      <Label layoutX="40.0" layoutY="-1.0" text="Üdvözöljük!">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="55.0" text="Mit szeretne csinálni?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceboxID" layoutX="15.0" layoutY="75.0" onMouseClicked="#choiceBoxPressed" prefWidth="180.0" />
+      <Button layoutX="160.0" layoutY="120.0" mnemonicParsing="false" onAction="#okButtonPressed" text="OK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="valasszonLabelID" layoutX="18.0" layoutY="79.0" text="Kérem válasszon...." />
+   </children>
+</AnchorPane>
