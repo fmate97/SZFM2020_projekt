@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.view.ATMLoginController">
+   <children>
+      <TextField fx:id="felhasznalonevField" layoutX="5.0" layoutY="37.0" prefWidth="200.0" />
+      <PasswordField fx:id="jelszoField" layoutX="5.0" layoutY="87.0" prefWidth="200.0" />
+      <Label layoutX="5.0" layoutY="20.0" text="Felhasználó név">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="70.0" text="Jelszó">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="120.0" mnemonicParsing="false" onAction="#BelepesButtonPressed" text="Belépés">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="hibasLabel" alignment="CENTER" layoutX="16.0" layoutY="157.0" prefHeight="36.0" prefWidth="192.0" text="Nem megfelelő felhasználó név &#10;          és jelszó kombináció!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" text="Belépés">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nincsadatLabel" alignment="CENTER" layoutX="16.0" layoutY="157.0" prefHeight="36.0" prefWidth="192.0" text="Nincs megadva felhasználó név&#10;              és/vagy jelszó!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="betoltesLabel" layoutX="5.0" layoutY="165.0" text="Betöltés..." visible="false" />
+      <ProgressBar fx:id="progressBarID" layoutX="1.0" layoutY="145.0" prefWidth="169.0" progress="0.0" visible="false" />
+      <ProgressIndicator fx:id="progressindicatorID" layoutX="170.0" layoutY="145.0" progress="0.0" visible="false" />
+      <Label fx:id="helyesLabel" alignment="CENTER" layoutX="16.0" layoutY="157.0" prefHeight="36.0" prefWidth="192.0" text="Megfelelő felhasználó név és &#10;          jelszó kombináció!" textFill="LIMEGREEN" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
